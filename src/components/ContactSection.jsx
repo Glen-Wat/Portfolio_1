@@ -35,28 +35,24 @@ export const ContactSection = () => {
           discuss how I can help bring your ideas to life.
         </p>
 
-        {/* Grid: text left, form right on desktop, stacked on mobile */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full justify-items-center">
-          {/* Info / Text (Left on desktop) */}
-          <div className="space-y-6 flex flex-col justify-center items-center md:items-start w-full max-w-md order-1 md:order-1 text-center md:text-left">
-            <div className="flex items-center space-x-4">
-              <div className="p-3 rounded-full bg-primary/10">
-                <Mail className="h-6 w-6 text-primary" />
-              </div>
-              <p className="text-muted-foreground">
-                I typically respond within 24 hours.
-              </p>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <div className="p-3 rounded-full bg-primary/10">
-                <MapPin className="h-6 w-6 text-primary" />
-              </div>
-              <p className="text-muted-foreground">Based in California, USA</p>
-            </div>
+        {/* Grid: Image Left, Form Right */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full justify-items-center items-center">
+          {/* Image */}
+          <div className="flex justify-center md:justify-end order-1 md:order-1">
+            <div
+              className="relative w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden gradient-border bg-no-repeat bg-center shadow-[0_0_20px_rgba(0,0,50,0.4)] transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(60,100,255,0.5)]"
+              style={{
+                backgroundImage: "url('/projects/headshot-blue.jpeg')",
+                backgroundSize: "100%", // 👈 zooms *out* slightly (100% = full fit, <100% zooms out)
+                backgroundPosition: "center 25%", // 👈 lowers image to show more of your head
+                backgroundColor: "#0a1020", // your dark blue background
+              }}
+              role="img"
+              aria-label="Glen Watson"
+            />
           </div>
 
-          {/* Contact Form (Right on desktop) */}
+          {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
             className="space-y-6 bg-card p-6 rounded-2xl shadow-sm w-full max-w-md mx-auto order-2 md:order-2"
