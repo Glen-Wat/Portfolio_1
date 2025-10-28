@@ -2,7 +2,7 @@ import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
 
-export const ThemeToggle = ({ className = "", onToggle }) => {
+export const ThemeToggle = ({ onToggle }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -10,14 +10,9 @@ export const ThemeToggle = ({ className = "", onToggle }) => {
     if (storedTheme === "dark") {
       setIsDarkMode(true);
       document.documentElement.classList.add("dark");
-    } else if (storedTheme === "light") {
-      setIsDarkMode(false);
-      document.documentElement.classList.remove("dark");
     } else {
-      // default
       localStorage.setItem("theme", "light");
       setIsDarkMode(false);
-      document.documentElement.classList.remove("dark");
     }
   }, []);
 
@@ -32,9 +27,7 @@ export const ThemeToggle = ({ className = "", onToggle }) => {
       setIsDarkMode(true);
     }
 
-    if (typeof onToggle === "function") {
-      onToggle();
-    }
+    if (onToggle) onToggle(); // closes the menu when used inside mobile nav
   };
 
   return (
@@ -42,15 +35,30 @@ export const ThemeToggle = ({ className = "", onToggle }) => {
       onClick={toggleTheme}
       aria-label="Toggle theme"
       className={cn(
-        "inline-flex items-center justify-center p-2 rounded-full transition-colors duration-200 focus:outline-none",
-        className
+        "relative inline-flex items-center justify-center p-2 rounded-full transition-transform duration-300 cursor-pointer group"
       )}
     >
       {isDarkMode ? (
-        <Sun className="h-5 w-5 text-yellow-300" />
+        <Sun
+          className={cn(
+            "h-6 w-6 text-yellow-300 transition-all duration-300 group-hover:scale-110 group-hover:brightness-125 group-hover:text-yellow-400"
+          )}
+        />
       ) : (
-        <Moon className="h-5 w-5 text-blue-900" />
+        <Moon
+          className={cn(
+            "h-6 w-6 text-blue-900 transition-all duration-300 group-hover:scale-110 group-hover:brightness-125 group-hover:text-blue-700"
+          )}
+        />
       )}
+
+      {/* Optional subtle glow behind the icon */}
+      <span
+        className={cn(
+          "absolute inset-0 rounded-full opacity-0 group-hover:opacity-40 blur-md transition-opacity duration-300",
+          isDarkMode ? "bg-yellow-300" : "bg-blue-600"
+        )}
+      />
     </button>
   );
 };
