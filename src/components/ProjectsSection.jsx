@@ -42,7 +42,7 @@ const projects = [
     id: 3,
     title: "What to Wear Weather App",
     description:
-      "A live full-stack React app on goodle cloud with user authentication that provides weather updates and personalized clothing recommendations based on your profile.",
+      "Full-stack React app deployed on Google Cloud with user authentication, delivering real-time weather updates and personalized clothing recommendations tailored to each user’s profile.",
     image: "/projects/project3.png",
     tags: [
       "JavaScript",
