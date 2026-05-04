@@ -38,27 +38,6 @@ const projects = [
     demoURL: "https://glen-wat.github.io/se_project_coffeeshop/",
     githubURL: "https://github.com/Glen-Wat/se_project_coffeeshop",
   },
-  {
-    id: 3,
-    title: "What to Wear Weather App",
-    description:
-      "Full-stack React app deployed on Google Cloud with user authentication, delivering real-time weather updates and personalized clothing recommendations tailored to each user’s profile.",
-    image: "/projects/project3.png",
-    tags: [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "JWT Authentication",
-      "Cloud deployment",
-      "login-signup Form",
-      "REST API",
-      "Full-stack",
-      "User profiles",
-      "Weather API",
-    ],
-    demoURL: "https://www.projwtwr.ignorelist.com/",
-    githubURL: "https://github.com/Glen-Wat/se_project_react",
-  },
 ];
 
 export const ProjectsSection = () => {
