@@ -38,6 +38,27 @@ const projects = [
     demoURL: "https://glen-wat.github.io/se_project_coffeeshop/",
     githubURL: "https://github.com/Glen-Wat/se_project_coffeeshop",
   },
+  {
+    id: 3,
+    title: "Spots",
+    description:
+      "A responsive photo-sharing app where users can add, like, edit, and delete posts. Built with vanilla JavaScript, custom BEM-structured CSS, and a REST API for data persistence — fully responsive across mobile, tablet, and desktop.",
+    image: "/projects/Project-spots.png",
+    tags: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "BEM",
+      "Flexbox",
+      "Grid",
+      "Responsive Design",
+      "REST API",
+      "Media Queries",
+      "Webpack",
+    ],
+    demoURL: "https://glen-wat.github.io/se_project_spots/",
+    githubURL: "https://github.com/Glen-Wat/se_project_spots",
+  },
 ];
 
 export const ProjectsSection = () => {
