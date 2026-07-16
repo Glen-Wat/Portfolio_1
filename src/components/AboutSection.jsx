@@ -11,23 +11,23 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-bold text-primary tracking-tight">
-              Engineer. Creator. Builder.
+              Full stack developer. Hands-on problem solver.
             </h3>
             <p className="text-muted-foreground">
-              I’m a hands-on problem solver with a builder’s mindset, focused on
-              turning ideas into scalable digital experiences. I specialize in
-              React and modern front-end development, creating UI systems that
-              balance performance, accessibility, and aesthetics. I love
-              building products from the ground up and pushing what’s possible
-              with code and creativity.
+              I came to web development after years of hands-on, problem-solving
+              work — from running machinery on a production line to managing a
+              retail department, scheduling teams, and digging into sales data
+              to improve customer experience. That background taught me to learn
+              fast, fix things under pressure, and pay attention to details that
+              actually matter to the people using what I build.
             </p>
             <p className="text-muted-foreground">
-              What drives me most about web development is the process of
-              transforming ideas into interactive, purposeful experiences. Every
-              project is a chance to solve problems, refine details, and learn
-              something new. I approach each challenge with curiosity and
-              precision, crafting interfaces that connect design and technology
-              through thoughtful, well-structured code.
+              Now I bring that same mindset to front-end development. I like
+              taking an idea and building it end to end — structuring clean,
+              maintainable code, sweating the details on responsive design, and
+              making interfaces that feel intuitive rather than just functional.
+              I'm still early in this path, but I learn quickly and I don't walk
+              away from a hard problem until it's solved.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
@@ -44,8 +44,9 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Web Development</h4>
                   <p className="text-muted-foreground">
-                    Building modern, impactful web experiences with technologies
-                    today to shape a better digital tomorrow.
+                    I build web applications end to end — clean front-end code,
+                    thoughtful structure, and interfaces that hold up on any
+                    device.
                   </p>
                 </div>
               </div>
@@ -58,9 +59,10 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">UI/UX Design</h4>
                   <p className="text-muted-foreground">
-                    Focused on creating intuitive, responsive, and enjoyable
-                    user experiences that connects people together with
-                    technology effortlessly.
+                    I care about the details that make an interface feel
+                    effortless — clear layouts, responsive design that works on
+                    any screen, and interactions that don't make the user think
+                    twice.
                   </p>
                 </div>
               </div>
@@ -75,8 +77,10 @@ export const AboutSection = () => {
                     Problem Solving & Innovation
                   </h4>
                   <p className="text-muted-foreground">
-                    Tackling complex challenges with creativity and precision.
-                    Transforming ideas into high-impact solutions through code.
+                    Years of hands-on work taught me to stay calm under pressure
+                    and dig until I find what's actually broken. I bring that
+                    same persistence to debugging and building solutions that
+                    hold up.
                   </p>
                 </div>
               </div>
