@@ -5,24 +5,34 @@ const skills = [
   // Frontend
   { name: "HTML/CSS", category: "frontend" },
   { name: "JavaScript", category: "frontend" },
+  { name: "TypeScript", category: "frontend" },
   { name: "React", category: "frontend" },
   { name: "Tailwind CSS", category: "frontend" },
   { name: "Next.js", category: "frontend" },
   { name: "Context API", category: "frontend" },
+  { name: "Vite", category: "frontend" },
+  { name: "BEM", category: "frontend" },
 
   // Backend
   { name: "Node.js", category: "backend" },
   { name: "Express", category: "backend" },
   { name: "MongoDB", category: "backend" },
+  { name: "Mongoose", category: "backend" },
   { name: "SQL/NoSQL", category: "backend" },
   { name: "REST API", category: "backend" },
-  { name: "Auth/Logins", category: "backend" },
+  { name: "JWT Auth", category: "backend" },
+  { name: "bcrypt", category: "backend" },
+  { name: "Schema Validation", category: "backend" },
 
   // Tools
   { name: "Git/GitHub", category: "tools" },
   { name: "Figma", category: "tools" },
   { name: "VS Code", category: "tools" },
   { name: "Postman", category: "tools" },
+  { name: "Jest", category: "tools" },
+  { name: "Bash", category: "tools" },
+  { name: "PowerShell", category: "tools" },
+  { name: "Linux", category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
